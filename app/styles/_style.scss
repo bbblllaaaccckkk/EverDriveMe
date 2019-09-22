@@ -1,4 +1,65 @@
-h1 {
-    color: red;
-    font-family: $fontLight;
+// common styles start
+
+
+// common styles end
+
+#header {
+    
+    .container-fluid {
+        background: #252a34;
+        font-size: 15px;
+        font-family: $fontLatoLight;
+    }
+
+    .navbar {
+        padding: 0 1rem;
+
+        .navbar-brand {
+            padding-right: 70px;
+        }
+
+        .dropdown-menu {
+            font-size: 12px;
+            font-family: $fontLatoMedium;
+            color: #252a34;
+            background: rgba($color: #918e8c, $alpha: 0.8);
+
+            .dropdown-item {
+                padding: 0.5rem 1.5rem;
+            }
+        }
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #ff2e63;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+    .navbar-expand-lg .navbar-nav .sign-link {
+        padding-left: 70px;
+    }
+
+    .navbar-expand-lg .navbar-nav .heart-link {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .banner {
+        background: url(../images/Banner.png) 100% 100% no-repeat;
+        height: 100vh;
+        background-size: cover;
+        padding-right: 70px;
+    }
+    
 }

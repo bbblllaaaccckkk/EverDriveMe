@@ -2378,51 +2378,45 @@ table {
   overflow: visible;
   clip: auto; }
 
-* {
-  box-sizing: border-box; }
+#header .container-fluid {
+  background: #252a34;
+  font-size: 15px;
+  font-family: "Lato-Light"; }
 
-.col-1 {
-  width: 8.33333%; }
+#header .navbar {
+  padding: 0 1rem; }
+  #header .navbar .navbar-brand {
+    padding-right: 70px; }
+  #header .navbar .dropdown-menu {
+    font-size: 12px;
+    font-family: "Lato-Medium";
+    color: #252a34;
+    background: rgba(145, 142, 140, 0.8); }
+    #header .navbar .dropdown-menu .dropdown-item {
+      padding: 0.5rem 1.5rem; }
 
-.col-2 {
-  width: 16.66667%; }
+#header .dropdown-item:hover,
+#header .dropdown-item:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ff2e63; }
 
-.col-3 {
-  width: 25%; }
+#header .navbar-light .navbar-nav .nav-link {
+  color: #ffffff; }
 
-.col-4 {
-  width: 33.33333%; }
+#header .navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 35px;
+  padding-left: 35px; }
 
-.col-5 {
-  width: 41.66667%; }
+#header .navbar-expand-lg .navbar-nav .sign-link {
+  padding-left: 70px; }
 
-.col-6 {
-  width: 50%; }
+#header .navbar-expand-lg .navbar-nav .heart-link {
+  padding-left: 25px;
+  padding-right: 25px; }
 
-.col-7 {
-  width: 58.33333%; }
-
-.col-8 {
-  width: 66.66667%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-10 {
-  width: 83.33333%; }
-
-.col-11 {
-  width: 91.66667%; }
-
-.col-12 {
-  width: 100%; }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1170px;
-  margin: 0 auto; }
-
-h1 {
-  color: red;
-  font-family: "OpenSans light"; }
+#header .banner {
+  background: url(../images/Banner.png) 100% 100% no-repeat;
+  height: 100vh;
+  background-size: cover;
+  padding-right: 70px; }

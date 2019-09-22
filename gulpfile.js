@@ -31,7 +31,7 @@ gulp.task('images', function(){
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.jpegtran({progressive: true}),
-        imagemin.optipng({optimizationLevel: 5}),
+        // imagemin.optipng({optimizationLevel: 5}),
         imagemin.svgo({
             plugins: [
                 {removeViewBox: true},
@@ -51,12 +51,24 @@ gulp.task('fonts', function(){
     .pipe(reload({stream: true}));
 });
 
+
+gulp.task('bootstrap-css', function(){
+    return gulp.src("./app/css/**/*")
+    .pipe(gulp.dest('build/css/'))
+    .pipe(reload({stream: true}));
+});
+
+gulp.task('js', function(){
+    return gulp.src("./app/js/**/*")
+    .pipe(gulp.dest('build/js/'))
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('css', function(){
     return gulp.src('./app/styles/css.css')
     // .pipe(minifyCss()) // минифицирование css
     .pipe(gulp.dest('build/css/'))
     .pipe(reload({stream: true}));
-
 });
 
 gulp.task('reload-css', function(){
@@ -85,7 +97,7 @@ gulp.task('clean', function(){
 });
 
 gulp.task('run', function(){
-    runSequence('clean', 'images', 'html','fonts', 'reload-css', 'browser-sync', 'watch');
+    runSequence('clean', 'images',  'html','fonts', 'bootstrap-css', 'js', 'reload-css',  'browser-sync', 'watch');
 });
 
 gulp.task('default', ['run']); 

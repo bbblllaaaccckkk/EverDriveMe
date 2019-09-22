@@ -4,18 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts/lato/lato.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/css.css">
-    <title>landing-test</title>
+    <script src="https://kit.fontawesome.com/f770778d6d.js" crossorigin="anonymous"></script>
+    <script src="./js/jQuery-3.3.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <title>EverDriveMe</title>
 </head>
 <body>
-    <header id="header"></header>
-    <h1>Получилось!</h1>
-    <i class="fa fa-star" aria-hidden="true"></i>
-    <i class="fa fa-star" aria-hidden="false"></i>
-    <i class="fa fa-star" aria-hidden="false"></i>
+    <!-- header -->
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img class="logo" src="./images/EverDriveMe(LOGO).png" alt="img-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cartridges</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Controllers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Accessories</a>
+                            </li>
 
-    <nav id="nav"></nav>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Information
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Information</a>
+                                    <a class="dropdown-item" href="#">Delivery & Returns</a>
+                                    <a class="dropdown-item" href="#">About us</a>
+                                    <a class="dropdown-item" href="#">Contact us</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link sign-link" href="#">
+                                        <i class="fas fa-user"></i>
+                                        Sign in <br>or register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link heart-link" href="#">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link basket-link" href="#">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container-fluid banner">
+        </div>
+    </header>
+    <!-- header -->
+    
+    <section class="section-top-sellers">
+
+    </section>
+    
 
     <footer class="footer"></footer>
+
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
